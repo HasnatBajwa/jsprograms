@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,54 +8,56 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>Js Programs</title>
 </head>
+
 <body>
     <h1 style="text-align: center;">Java Programs</h1>
     <div class="container">
-    <!-- Validating Credit Card Info -->
-    <div id="card-validation">
-        <input class="input" type="text" name="" id="id-card" placeholder="Enter Your 14-Digit Card Number">
-        <button class="btn">Enter</button>
-        <p class="result" id="id-error"></p>
-    </div>
-     <!-- potato Counter -->
-     <div id="potato-counter">
-        <input class="input" type="text" name="" id="potatocounter" placeholder="Enter Your Words">
-        <button class="btn">Enter</button>
-        <p class="result" class="result" id="potatoresult"></p>
-    </div>
-     <!-- Character Repeating String -->
-     <div id="character-repetition">
-        <input class="input" type="text" name="" id="char-repeat" placeholder="Enter Your String">
-        <button class="btn">Enter</button>
-        <p id="char-result"></p>
-    </div>
-    <!-- Salary Calculator -->
-    <div id="salary-calculator">
-        <input class="input" type="text" name="" id="salary" placeholder="Enter Your Basic Salary">
-        <button class="btn">Enter</button>
-        <p class="result" id="salary-result"></p>
-    </div>
-    <!-- Bill Calculator -->
-    <div id="bill-calculator">
-        <input class="input" type="text" name="" id="bill" placeholder="Enter Your Consumed Units">
-        <button class="btn">Enter</button>
-        <p class="result" id="bill-result"></p>
-    </div>
-    <!-- Multiple of 3 and 5 sum Calculator -->
-    <div id="sum-calculator">
-        <input class="input" type="text" name="" id="multiple" placeholder="Sum of Multiples of 3 and 5" disabled>
-        <button class="btn">Enter</button>
-        <!-- <p id="salary-result"></p> -->
-    </div>
-    <!-- Checking Repeating Words -->
-    <div id="word-checker">
-        <input class="input" type="text" name="" id="words" placeholder="Enter Words">
-        <button class="btn">Enter</button>
-        <p class="result" id="Word Result"></p>
+        <!-- Validating Credit Card Info -->
+        <div id="card-validation">
+            <input class="input" type="password" name="" id="cardNum" placeholder="Enter Your 14-Digit Card Number">
+            <button class="btn" onclick="cardHide()">Enter</button>
+            <p class="result" id="cardError"></p>
+        </div>
+        <!-- potato Counter -->
+        <div id="potato-counter">
+            <input class="input" type="text" name="" id="potato" placeholder="Enter Your Words">
+            <button class="btn" onclick="countPotatoes()">Enter</button>
+            <p class="result" class="result" id="potatoresult"></p>
+        </div>
+        <!-- Character Repeating String -->
+        <div id="character-repetition">
+            <input class="input" type="text" name="" id="charRepeat" placeholder="Enter Your String">
+            <button class="btn" onclick="charaterRepeat()">Enter</button>
+            <p class="result" id="charResult"></p>
+        </div>
+        <!-- Salary Calculator -->
+        <div id="salary-calculator">
+            <input class="input" type="text" name="" id="salary" placeholder="Enter Your Basic Salary">
+            <button class="btn" onclick="grossSalary()">Enter</button>
+            <p class="result" id="salaryResult"></p>
+        </div>
+        <!-- Bill Calculator -->
+        <div id="bill-calculator">
+            <input class="input" type="text" name="" id="bill" placeholder="Enter Your Consumed Units">
+            <button class="btn" onclick="billCalculator()">Enter</button>
+            <p class="result" id="billResult"></p>
+        </div>
+        <!-- Multiple of 3 and 5 sum Calculator -->
+        <div id="sum-calculator">
+            <input class="input" type="text" name="" id="multiple" placeholder="Sum of Multiples of 3 and 5">
+            <button class="btn" onclick="findMultiples()">Enter</button>
+            <p class="result" id="multipleResult"></p>
+        </div>
+        <!-- Checking Repeating Words -->
+        <div id="word-checker">
+            <input class="input" type="text" name="" id="words" placeholder="Enter Words">
+            <button class="btn">Enter</button>
+            <p class="result" id="Word Result"></p>
+        </div>
+
     </div>
 
-</div>
-
-<script src="./script/script.js"></script>
+    <script src="./script/script.js"></script>
 </body>
+
 </html>
